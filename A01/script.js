@@ -1,13 +1,12 @@
-let ricxvi = prompt('chaweret ori ricxvi').split(' '),
-    a = +ricxvi[0],
-    b = +ricxvi[1],
+let nums = prompt('Enter 1 number').split(' '),
+    a = +nums[0],
     sum = 0;
 
-if((a <= 0 || b <= 0 ) || (a >= 1000 || b >= 1000) || a >= b ){
-    alert('shecdoma dapiqsirda');
+if((a <= 0) || (a >= 100)){
+    alert('არასწორი შუალედი');
 }else{
-    for(a; a<=b; a++){
-        sum += a;
+    for(var i = 0; i<a; i=i+2){
+        sum += i;
     }
 
     alert(sum);
